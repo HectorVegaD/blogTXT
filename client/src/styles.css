@@ -1,0 +1,99 @@
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+}
+
+nav{
+    height: 75px;
+    overflow: hidden;
+    background-color: #242424;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav .navbar-brand[_ngcontent-c0] {
+    position: absolute;
+    font-size: 24px;
+    padding-left: 51px;
+    text-decoration: none;
+    top: 50%;
+    margin-top: -23px;
+}
+
+nav .blue{
+    color: #3d9ef1;
+}
+
+nav .blue-hover{
+    -webkit-transition: color 0.25s; /* For Safari 3.1 to 6.0 */
+    transition: color 0.25s;
+}
+
+nav .blue-hover:hover{
+    color: #3d9ef1;
+}
+
+nav ul{
+    position: absolute;
+    list-style: none;
+    right: 65px;
+    font-size: 1rem;
+    top: 50%;
+    margin-top: -1.2rem;
+    font-size: 16px;
+}
+
+nav ul li{
+    display: inline;
+    padding-left: 15px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav ul li a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.blogs{
+    padding-top: 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #C0C0C0	; /* old IE */
+    background-color: #C0C0C0	; /* Modern Browsers */
+    margin: 0px 0px 2px 0px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    padding: 15px 25px;
+    font-size: 16px;
+}
+
+.inputStyle {
+    color: #696969;
+    font-size: 19px;
+}

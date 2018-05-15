@@ -1,0 +1,64 @@
+<nav>
+        <a _ngcontent-c0="" class="navbar-brand" href="#">
+            <span _ngcontent-c0="" class="blue">TXT- </span> 
+            <span _ngcontent-c0="" class="blue-hover transition">blogs</span>
+        </a>
+    
+        <ul>
+          <li><a href="#" (click)="clickHome()">View All Blogs</a></li>
+          <li><a href="#" (click)="clickCreate()">Create New Blog</a></li>
+        </ul>
+</nav>
+<div class="container">
+    <div *ngIf='toggleForm' class="blogs">
+            <form #frm = "ngForm" (ngSubmit)="addBlog(frm)">
+                    <div class="form-group">
+                        <label for="">
+                            Blog title:
+                        </label>
+                        <input 
+                        type="text"
+                        class="form-control"
+                        name="blogTitle"
+                        value=""
+                        ngModel
+                        style="color: #696969; font-size: 16px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Blog author name:
+                        </label>
+                        <input 
+                        type="text"
+                        class="form-control"
+                        name="authorName"
+                        value=""
+                        ngModel
+                        style="color: #696969; font-size: 16px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="">
+                            Blog content:
+                        </label>
+                        <textarea
+                        rows="10" 
+                        class="form-control"
+                        name="blogContent"
+                        value=""
+                        ngModel
+                        style="color: #696969; font-size: 16px;">
+                        </textarea>
+                    </div>
+                    <button type="submit" name="button" class="btn btn-success" style="font-size:20px; background-color: #3d9ef1">Submit</button>
+                </form>
+    </div>
+
+    <div >  
+        <div *ngFor = "let blog of blogs" class="blogs">
+            <h1>{{blog.title}}</h1>
+            <hr>
+            <h3><span class="glyphicon glyphicon-user" style="color: #3d9ef1"></span> {{blog.author}}</h3>
+            <p>{{blog.content}}</p>
+        </div>
+    </div>
+</div>
